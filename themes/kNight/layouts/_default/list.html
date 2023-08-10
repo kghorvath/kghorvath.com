@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+{{ range .Pages.ByPublishDate.Reverse }}
+<p>
+    <h4><a class="post" href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+    {{ partial "metadata.html" . }}
+<!--    <a class="summary" href="{{ .RelPermalink }}">
+        <p>{{ .Summary }}</p> -->
+    </a>
+</p>
+{{ end }}
+{{ end }}

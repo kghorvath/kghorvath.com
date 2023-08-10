@@ -1,0 +1,14 @@
+    <div id="header">
+      <div class="navigation">
+	<ul>
+	  {{ $currentPage := . }}
+	  {{ range .Site.Menus.main }}
+	  <a class="sidebar-nav-item" href="{{.URL}}">{{ .Name }}</a>
+	  {{ end }}
+	</ul>
+      </div>
+      <div class="title">
+      <h1>Kamin Horvath</h1>
+      </div>
+      <hr>
+    </div>

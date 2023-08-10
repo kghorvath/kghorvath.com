@@ -1,0 +1,14 @@
+{{ $dateTime := .PublishDate.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+<i data-feather="calendar"></i>
+<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+|
+<i data-feather="readingtime"></i>
+<span class="reading">{{ .ReadingTime }} {{ cond (eq .ReadingTime 1) "minute" "minute"}} read</span>
+{{ with .Params.tags }}
+<i data-feather="tag"></i>
+{{ range . }}
+{{ $href := print (absURL "tags/") (urlize .) }}
+<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
+{{ end }}
+{{ end }}
