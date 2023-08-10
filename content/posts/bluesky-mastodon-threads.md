@@ -1,0 +1,15 @@
+---
+title: "Thoughts on Bluesky, Mastodon, and Threads"
+date: 2023-07-05T17:00:38-04:00
+draft: false
+---
+
+With the launch of Threads tonight, and after having had the chance to use Mastodon and now Bluesky for a bit, I wanted to write my thoughts on the landscape.
+
+Ever since I created a Mastodon instance and joined the Fediverse, I've felt a new love and sense of hope for social media that I had not felt in a long time. Compared to the cesspools of Facebook and Twitter, Mastodon has been a breath of fresh air. The community and level of genuineness in interaction I found there was something I had not experienced since the early days of being on the web. It made me realize that Mastodon didn’t need to be the successor to Twitter to be great - it was able to do that by carving out a niche of its own. 
+
+Where Bluesky comes in is that “next Twitter”. I’ve heard comparisons of it to early Twitter and I can see it, where there’s a level of enthusiasm to being on a new platform. I do like some of the ideas Bluesky has put forth with the AT protocol as well, such as unique domain handles that are DNS TXT verified. It’s a great solution to the verification problem, and unlike Mastodon doesn’t require you to spin up your own instance. That being said, there are rough edges. Bsky.social, the only instance available so far, is still missing fundamental features like 2FA authentication. It also seems to have hints of algorithmic suggestions, which Mastodon has vehemently been against. Not an issue yet, but as history has shown, algorithms can be weaponized easily. Still, it does seem like Bluesky is the best positioned to be the Twitter replacement that everyone has held their breath for.
+
+Finally that brings us to Threads. From what I can tell so far, it’s a real mess. Built by Meta on the shoulders of Facebook and Twitter, it shows it’s origins easily. The app is a privacy nightmare, as expected. And in just a few hours, it seems to be already overrun with spam accounts and bad actors. It’s like jumping straight to when Twitter went to shit. What makes Threads interesting though is that they apparently plan to incorporate ActivityPub and join the Fediverse sometime in the future. Whether this is good or bad has been discussed to death already, with no clear conclusions. I will say that personally, I plan to block federation with Threads until the network effects of such a move are a bit clearer. With that in mind, I have no desire and no plan to sign up with Threads anytime soon. It's just not clear what the end goal of Threads is. Is it a Twitter-killer, launched quickly to capitalize on Elon's missteps? Is it another venue for Meta to suck up personal data and monetize it? Or is it just another attempt by Meta to expand back into a landscape that they've struggled to win back for some time?
+
+So there you have it, my two cents on three social media platforms each with differing philosophies and implementations. Only time will tell how this plays out, but my only hope is that the good parts I’ve found stay, and we learn our lessons of the past and minimize the bad that has plagued the platforms we fled from.

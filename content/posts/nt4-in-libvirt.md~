@@ -1,0 +1,31 @@
+---
+title: "Windows NT 4 in Libvirt"
+date: 2023-06-20T17:00:11-04:00
+draft: false
+---
+
+In the process of moving over to Fedora as my server OS, I've been exploring how to replicate some of the things I did in Proxmox - one of which is running a sort of legacy "ant farm" network. The core of that network was a Windows NT 4 virtual machine acting as a primary domain controller, serving DNS, WINS, and DHCP to that subnet.
+
+I followed [Virtually Fun's guide](https://virtuallyfun.com/2012/12/20/installing-windows-nt-4-0-on-proxmoxve/) to setting up NT4 on Proxmox and wanted to see if I could replicate it here. Since both Proxmox and Libvirt in Fedora use QEMU/KVM underneath, I knew it was possible - it was just a matter of replicating the Proxmox configuration in a Libvirt domain XML.
+
+I began by using virt-install to create a basic domain as a template. I ran the following command:
+
+`virt-install --virt-type kvm --name winnt4 --cdrom /machines/en_winnt_4.0_svr.iso --os-variant winnt4.0 --disk size=2 --memory 64 --sound sb16 --cpu pentium --network user,model=pcnet`
+
+This creates a new domain with a 2GB hard drive, 64MB of RAM, a virtual SoundBlaster 16 sound card, a pentium-equivalent CPU, and an virtual AMD PCNet NIC.
+
+This gets us a running machine, but you may notice that the web viewer isn't available in Cockpit. That's because the new machine only has a SPICE viewer, not a VNC output Cockpit needs.
+
+ Run `virsh edit winnt4` to drop into the XML editor, and add the following under `<devices>`:
+
+`<graphics type='vnc' port='-1' autoport='yes' listen='127.0.0.1'>
+ <listen type='address' address='127.0.0.1'/>
+ </graphics>`
+
+This will create a VNC port that Cockpit can hook into. Save the domain and reboot the VM and we should be able to get some screen output:
+
+![NT4 setup](https://i.kghorvath.com/blog/nt4_inst_cockpit.png)
+
+From here on out, you should be able to continue on with installation and get up and running with network support. I may go into detail in a future post about some finishing touches, such as installing better mouse and VGA drivers, and enabling ACPI shutdown.
+
+![NT4 login screen](https://i.kghorvath.com/blog/nt4_cockpit_postinst.png)

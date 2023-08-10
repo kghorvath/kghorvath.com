@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<article>
+  <header>
+    <!-- # comment this out for the home page. -->
+    <!--<h1 class="text-primary">{{ .Title }}</h1>-->
+  </header>
+  <section>
+    <div id="content">
+      {{ .Content }}
+<ul>
+{{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+<li>
+<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+</li>
+{{ end }}
+</ul>
+    </div>
+  </section>
+</article>
+
+{{ partial "footer.html" . }}

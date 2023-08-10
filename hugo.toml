@@ -1,0 +1,4 @@
+baseURL = 'http://kghorvath.com/'
+languageCode = 'en-us'
+title = 'Kamin Horvath'
+theme = 'dark'
