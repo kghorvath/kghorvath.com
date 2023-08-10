@@ -1,8 +1,0 @@
-{{ define "main" }}
-<h2>{{ .Title }}</h2>
-{{ if not .Params.hidemeta }}
-{{ partial "metadata.html" . }}
-<br><br>
-{{ end }}
-{{ .Content }}
-{{ end }}
