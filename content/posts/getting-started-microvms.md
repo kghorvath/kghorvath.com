@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Microvms"
+title: "Getting Started with MicroVMs"
 date: 2024-01-18T11:16:40-05:00
 draft: false
 ---
@@ -78,4 +78,4 @@ sh: can't access tty; job control turned off
 / #
 ```
 
-If you list the contents of bin, you'll find that busybox as hardlinked most of the common utilities you'd find in a base Linux distribution. Feel free to play around and when you're done, just type `exit`. Since microVMs don't have ACPI support, we set our kernel boot parameters to trigger a triple-fault upon reboot, gracefully exiting QEMU when we're done.
+If you list the contents of `/bin`, you'll find that busybox has hardlinked most of the common utilities you'd find in a base Linux distribution. Feel free to play around and when you're done, just type `exit`. Since microVMs don't have ACPI support, we set our kernel boot parameters to trigger a triple-fault upon reboot, gracefully exiting QEMU when we're done.
