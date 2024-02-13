@@ -6,6 +6,4 @@ menu:
 hidemeta: true
 ---
 
-This website is hosted on a Debian LXC host running [Apache](https://httpd.apache.org/). I'm using [Caddy](https://caddyserver.com/) as a reverse proxy and to handle certificates from [Let's Encrypt](https://letsencrypt.org/).
-
-The website itself is built in [Hugo](https://gohugo.io/), using my own custom theme.
+This website is hosted on Github Pages. You can find the repository for it [here](https://gitlab.com/khorvath/kghorvath.com). It's built in [Hugo](https://gohugo.io) using a custom theme I created called kNight.
