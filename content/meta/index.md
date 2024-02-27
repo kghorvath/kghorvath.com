@@ -6,4 +6,4 @@ menu:
 hidemeta: true
 ---
 
-This website is hosted on Gitlab Pages. You can find the repository for it [here](https://gitlab.com/khorvath/kghorvath.com). It's built in [Hugo](https://gohugo.io) using a custom theme I created called kNight.
+This website is hosted on my personal web server. You can find the repository for it [here](https://gitlab.com/khorvath/kghorvath.com). It's built in [Hugo](https://gohugo.io) using a custom theme I created called kNight.

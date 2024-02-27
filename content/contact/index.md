@@ -13,8 +13,8 @@ hidemeta: true
 
 ### Social
 - Mastodon - [@kamin@social.kghorvath.com](https://social.kghorvath.com/@kamin)
+- AT Protocol - [@kghorvath.com](https://bsky.kghorvath.com/profile/kghorvath.com)
 - PeerTube - [@kamin@peertube.kghorvath.com](https://peertube.kghorvath.com/a/kamin/video-channels)
-- Bluesky - [@kghorvath.com](https://bsky.app/profile/kghorvath.com)
 - Hacker News - [itsmartapuntocom](https://news.ycombinator.com/user?id=itsmartapuntocm)
 - I am not on Facebook or Twitter (aka X) because I disagree with the privacy invasiveness and the direction of those platforms.
 
